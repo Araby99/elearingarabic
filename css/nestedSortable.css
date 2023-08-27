@@ -1,0 +1,32 @@
+.placeholder { background-color: #f7f7f7; border:1px dashed #ccc; }
+.ui-nestedSortable-error { background:#fbe3e4; color:#8a1f11; }
+ol { margin: 0; padding: 0; padding-left: 30px; }
+ol.sortable, ol.sortable ol { margin: 0 0 0 25px; padding: 0; list-style-type: none; }
+.sortable li { margin: 7px 0 0 0; padding: 0; }
+.sortable li div { border: 1px solid #E9E9E9; padding: 8px; margin: 0; cursor: move; clear:both; background:#F7F7F7; border-radius:5px; -webkit-border-radius:5px ;-moz-border-radius:5px}
+.edit { float: right; font-weight: bold; font-family: Tahoma; width: 25px; cursor: pointer; }
+.hidden { display: none }
+.sortable-menu { font-family:tahoma, Arial, Helvetica, sans-serif }
+.items-links { float:left; width:300px; padding-top:10px; }
+.pages-selector { background:#FFF; border:1px solid #ccc; padding:10px; height:330px; overflow:auto; margin-bottom:10px; }
+.pages-selector h3 { font-size:12px; padding:5px 8px; margin:5px 0; background:#F4F9FD; }
+.pages-selector .selectors { padding:2px 8px; clear:both }
+.pages-selector .selectors input { float:left; display:block; }
+.pages-selector .selectors label { margin-left:20px; display:block; }
+.menu-sorting { float:right; width:390px; }
+.sortable li div.edit-box, .sortable li div.edit-box div { background:none; border:none; padding:0; }
+.sortable li div.edit-box { background:#FFF; padding:8px 10px; margin:4px 0 0; border:1px dotted #E9E9E9; position:relative; }
+.edit-box label { display:block; padding:3px 2px; }
+.edit-box input { display:block; padding:4px; width:90%; font-family:tahoma, Arial, Helvetica, sans-serif; border:1px solid #E9E9E9; font-size:11px; }
+
+.sortable li .edit-box div.checkbox { padding:15px 0 10px}
+.edit-box .checkbox label { display:inline;  margin:0; padding:0}
+.edit-box .checkbox input { width:auto; height:auto; float:none; display:inline; margin:0; padding:0  }
+
+
+.edit-box .close { display: block; width: 11px; height: 11px; background: url(../img/admin2/ico_close_off.png) top left no-repeat; font-size: 0%; text-indent: -9999px; position: absolute; top: 3px; right: 3px; cursor:pointer }
+.edit-box .close:hover { background: url(../img/admin2/ico_close_ovr.png) top left no-repeat; }
+
+
+
+.menu-add { background:url(../img/admin2/white-grad.png) repeat-x bottom; ; border-style: solid; border-width: 1px; cursor: pointer; font-size: 11px; line-height: 13px; padding: 3px 8px; text-decoration: none; border-color: #BBBBBB; color: #464646; border-radius:11px; -webkit-border-radius:11px ;-moz-border-radius:11px }

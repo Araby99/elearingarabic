@@ -1,0 +1,27 @@
+.filter li {
+	display:block;
+	float:left;}
+
+.table-pricing thead .tablecolActive .table_head {
+	left:1px}
+
+#header_images div,
+.header_image {
+	opacity:1;}
+	
+	
+	input[type="reset"], input[type="submit"], input[type="button"], button {
+	border: medium none;
+	color: #FFFFFF;
+	font-size: 14px;
+	height: 28px;
+	padding: 4px 11px 4px 4px;
+	text-align: center;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(images/green_search_btn.gif);
+	background-repeat: repeat;
+	background-position: 0 0;
+	text-align:center;
+	/*width:60px;*/
+}

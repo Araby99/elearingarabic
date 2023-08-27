@@ -1,0 +1,34 @@
+/*.header_slider { background:url(images/header_bg.png) center 0 no-repeat; clear:both }
+.header_slider_thin { background: url(images/header_bg_thin.png) center 0 no-repeat }*/
+/* sliders */
+.sImages .caption { color:#f7feb3; text-shadow:1px 1px 1px #000; background:url(apple-green/slider_caption.png); }
+.sImages .pagination li a { background-image:url(apple-green/slider_pagination.png); }
+/* footer */
+/* content */	
+.content .link-more { color:#68740f; }
+a, .entry a, .text a { color:#6b8509; text-decoration:none; }
+.container_12 a:hover, .content .link-more:hover { color:#9db304 }
+.quote-text, .quote_right, .quote_left { color:#738110; }
+.faq_question { color:#738110; }
+.post-item h2 a:hover { color:#738110; }
+.tf_pagination a { color:#68740f; }
+.tf_pagination a:hover { color:#adc301 }
+.tf_pagination .page_current { color:#000 }
+.comment-author, .comment-author .link-author { color:#68740f; }
+.comment-entry .link-reply { color:#738110; }
+.children li { background:url(apple-green/icon_reply.gif) 15px 23px no-repeat; }
+.link-top, .link-addcomment { color:#68740f; }
+/* Color Styled Buttons */
+.btn_brown, .btn_brown span { background-image:url(images/buttons_bg_brown2.png); }
+.btn_blue, .btn_blue span { background-image:url(images/buttons_bg_blue.png); }
+.btn_orange, .btn_orange span { background-image:url(images/buttons_bg_orange.png); }
+.btn_green, .btn_green span { background-image:url(images/buttons_bg_green.png); }
+.btn_green_apple, .btn_green_apple span { background-image:url(images/buttons_bg_green_apple.png); }
+.btn_red, .btn_red span { background-image:url(images/buttons_bg_red.png); }
+.btn_purple, .btn_purple span { background-image:url(images/buttons_bg_purple.png); }
+.btn_dark_gray, .btn_dark_gray span { background-image:url(images/buttons_bg_black_gray.png); }
+.btn_red, .btn_red span { background-image:url(images/buttons_bg_red.png); }
+.gl_col_1 .gallery-image:hover, .gl_col_2 .gallery-image:hover, .gl_col_3 .gallery-image:hover { background:#909904; }
+.filter li a:hover span, .filter li.current-menu-item a span { color:#738110 }
+.container_12 blockquote { color:#738110; }
+.faq_question.active { color:#9db304 }

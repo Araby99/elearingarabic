@@ -1,0 +1,303 @@
+/*	-------------------------------------------------------------
+	Project Name   Silvertrees admin panel
+	developer3@silvertrees.net AA
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+/*	-------------------------------------------------------------
+	0. Rests
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+* { margin:0; padding:0; }
+img{ border:0;}
+/* Ready To Use */
+.clear { clear:both; }
+.width100 { width: 100%; }
+.width75 { width: 75%; }
+.width50 { width: 50%; }
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.alignLeft { text-align: left; }
+.alignRight { text-align: right; }
+.hint { font-size:12px; color:#990000; display:block; padding-bottom:5px; letter-spacing:normal; }
+.Hints { font-size:11px; color:#990000; display:block; padding-bottom:5px; }
+/*	-------------------------------------------------------------
+	1. Main Layout
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+body { background:#FFF url(../img/admin/admin_bg.gif) repeat-y;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#444; }
+body a { outline:none; }
+#Adminpanel { width:1024px; }
+/* SideBar */
+#SideBar { width:243px; float:left; }
+#TopBlock { min-height:800px; display:block; }
+*html #TopBlock { height:800px; }
+#Bottomblock { height:400px; }
+#Bottomblock a { background:url(../img/admin/silvertrees.gif) no-repeat; height:73px; width:187px; display:block; text-indent:-9999px; float:right; }
+/* Silvertrees Logo */
+#Logo { width:243px; }
+#Logo a { margin-left: 90px;margin-top: 10px;display:block; height:140px; width:115px; background:url(../img/admin/logo.png) no-repeat; text-indent:-9999px; }
+/* Left Categories */
+#SideMenu { width:243px; display:block; margin-bottom:50px; }
+#SideMenu .Options { margin-left:54px; margin-top:1px; }
+.Options a.menu_options { background:url(../img/admin/menu_options.gif) no-repeat top; height:23px; width:164px; display:block; padding:8px 0 0 25px; font-size:12px; font-weight:700; color:#FFF; text-decoration:none; }
+.Options a:hover.menu_options { background:url(../img/admin/menu_options.gif) no-repeat bottom; text-decoration:none; }
+a.Selected { background:#FFF; height:23px; width:164px; display:block; padding:8px 0 0 25px;  font-weight:700; color:#000; text-decoration:none; }
+#SideMenu .Options ul { list-style:none; float:right; width:165px; display:none; }
+#SideMenu .Options ul li { padding:2px 0; }
+#SideMenu .Options ul.Selected { display:block; }
+#SideMenu .Options ul a { clear:both; color:#FFF; text-decoration:none; height:20px; display:block; padding-top:3px; }
+#SideMenu .Options ul a:hover { color:#eeeeee; text-decoration:underline }
+#Contents { float:left; padding:30px 10px 15px 30px; }
+#Contents h2 { padding-bottom:7px;  font-size:18px; font-weight:100; }
+/* Blocks */
+.Blcok { width:723px; margin:5px 0 20px 0; }
+.Blcok .BlcokHead { background:#FFF; width:721px; border-bottom:1px solid #444; padding-bottom:10px; margin-bottom:15px;}
+.BlcokHead h3 { color:#1794c5; float:left; padding:3px 0 0 5px; font-size:17px; font-weight:700;}
+.BlcokHead h3 a { color:#1794c5; text-decoration:none; }
+.BlcokHead h3 a:hover { text-decoration:underline;}
+.BlcokHead img { float:left; display:none; }
+.BlcokContents { padding:5px 10px 5px 0px; }
+.BlcokContents a { color:#31a0ca}
+.BlcokContents h2 { font-size:24px; font-weight:700; }
+/*	-------------------------------------------------------------
+	2. Forms
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+form{ clear:both;}
+.FormExtended label { display:block; font-size:16px; margin:15px 0 3px 0; color:#444; word-spacing:-0.75px; font-weight:700;  font-size:14px; }
+.FormExtended legend { color:#333;}
+.FormExtended .text img { margin:0 0 -3px 15px; }
+.Submit { background:url(../img/admin2/submit.gif) no-repeat; height:25px; width:69px; border:0; display:block; margin:20px 0 20px 0; font-size:12px; padding-bottom:2px; font-weight:700; color:#42413d; font-family:"Lucida Sans" }
+.FormExtended .ErrorMsg { background:url(../img/admin2/error.gif) no-repeat left bottom; padding-left:20px; font-size:15px; font-weight:700; color:#a23103; }
+.FormExtended .Success { background:url(../img/admin2/done.gif) no-repeat left bottom; padding-left:20px; font-size:15px; font-weight:700; color:#678446; }
+.INPUT { border:1px solid #dddddd; padding:4px 3px 4px 2px; background:#FFF url(../img/admin2/input_text.gif) repeat-x; color:#727272; font-weight:700; font-family:Arial; font-size:12px; font-weight:700; margin-right:5px; }
+.FormExtended #CheckBox { font-size:14px; font-weight:700; display:block; position:relative; width:300px; /*height:40px; */}
+#CheckBox input { position:absolute; left:0; top:20px; padding:0; margin:0; clear:both; }
+#CheckBox label { position:absolute; left:18px; top:16px; padding:0; margin:0; clear:both; }
+.aspct { font-size:11px; color:#990000; }
+.FormExtended img { padding:10px 5px 0 0; }
+.FormExtended a { color:#333; }
+.aspect { color:#990000; font-size:12px; }
+.file_properties{ display:blockl; margin-bottom:8px;}
+#FilterDiv{ display:block; margin-bottom:15px;}
+
+div.input{padding-bottom:5px;}
+
+#FilterForm div{ display:inline; float:left; margin-right:10px;}
+#FilterForm label{ font-size:11px; margin-top:5px;}
+#FilterForm div.clear{ display: block; float:none; margin-right:0px;}
+#FilterForm div.select select{ width:87px;font-size:11px; height:25px; font-family:Arial; padding-left:3px;}
+#FilterForm div.text input{ width:65px; font-size:11px;height:16px;font-family:Arial;  padding-left:3px;}
+#FilterClear{ display:inline-block; margin-left:5px;}
+#FilterForm .FilterAction { padding-top:4px;}
+#FilterForm .FilterAction input{ float:left;}
+
+/*.FilterAction input#FilterClear{ margin:-45px 0 10px 86px; }*/
+
+
+/*  Erros Massages */
+.error-message { background:url(../img/admin2/error.gif) no-repeat left bottom; padding-left:20px; font-size:14px; font-weight:700; color:#a23103; display:inline; margin-left:10px;}
+
+input.error-message, select.error-message, textarea.error-message{ margin-left:0;}
+
+.Errormessage { background:#eedbd5 url(../img/admin2/error_msg.gif) no-repeat 10px 10px; height:26px; text-align:left; width:400px; border:1px solid #bd5748; padding:14px 0 10px 40px; margin:0 auto 30px auto; color:#bd5748; font-weight:700; }
+.Sucmessage, .message { background:#e6ebc3 url(../img/admin2/suc_msg.gif) no-repeat 10px 10px; height:26px; text-align:left; width:400px; border:1px solid #709f33; padding:14px 0 10px 40px; margin:30px auto 30px auto; color:#709f33; font-weight:700; }
+.Notemessage { background:#FEF9F1 url(../img/admin2/warn.gif) no-repeat 10px 20px; text-align:left; width:400px; border:1px solid #9C3C1C; padding:30px 0 30px 60px; margin:30px auto 30px auto; color:#9C3C1C; font-weight:700; }
+.Notemessage a { color:#000; }
+/*	-------------------------------------------------------------
+	3. Table layout
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+
+td .actions { margin-left:10px; text-align:center; }
+ul.action { list-style:none; padding:0 5px; /*width:60%;*/ margin:0 auto; }
+ul.action li { display:inline; float:left; padding:0 3px }
+.sort { text-decoration:none; background:url(../img/admin/top_arrow.gif) right center no-repeat; color:#ff6c00; }
+#Table { border-bottom:1px solid #dddddd; border-right: 1px solid #dddddd; width:100%; text-align:center; margin-bottom:10px; }
+#Table td a { color:#2d444f; text-decoration:none; display:block; height:25px; width:100%; padding-top:4px; }
+#Table a:hover { background:url(../img/admin/td_hover.gif) repeat-x; color:#990000; }
+#Table td { border-top:1px solid #dddddd; border-left:1px solid #dddddd; background:#FFF url(../img/admin/td.gif) repeat-x top; height:25px; text-align:center; padding:0px; }
+#Table .TableHeader td { font-weight:700; color:#000; background:url(../img/admin/td_hd.gif) repeat-x; height:27px; padding:0; }
+#Table .TableHeader td a { font-weight:700; font-size:12px; color:#2d444f; }
+#Table .TableHeader a { text-decoration:none; display:block; color:#ff6c00; padding:6px 0 2px 0px; height:20px; }
+#Table .TableHeader a:hover { background:url(../img/admin/top_hover.gif) right center no-repeat; text-decoration:none; display:block; }
+#Table .TableHeader td.asc a { text-decoration:none; display:block; background:url(../img/admin/top_hover.gif) right center no-repeat; color:#0092ff; }
+#Table td.asc a { color:#0092ff; text-decoration:none; }
+#Table td.asc a:hover { background:url(../img/admin/down_hover.gif) right center no-repeat; text-decoration:none; }
+#Table .TableHeader td.desc a, td.desc a:hover { text-decoration:none; display:block; background:url(../img/admin/down_hover.gif) right center no-repeat; color:#0092ff; }
+#Table td.desc a { color:#0092ff; text-decoration:none; }
+#Table td.desc a:hover { background:url(../img/admin/top_hover.gif) right center no-repeat; text-decoration:none; }
+.ViewTable a { color:#bfbfbf; }
+.ViewTable { border-bottom:1px solid #f3f3f3; border-right: 1px solid #f3f3f3; width:80%; text-align:left; margin:10px 0 30px 0; }
+.ViewTable td { border-top:1px solid #f3f3f3; border-left:1px solid #f3f3f3; padding-left:5px; font-weight:700; }
+.ViewTable td img admin { border:4px solid #f3f3f3; margin:10px 5px 10px 0px; }
+/* Options */
+#Table a.AddProduct { background:url(../img/admin2/add.gif) no-repeat left center; display:block; float:left; text-indent:-9999px; height:16px; width:16px; padding:0 5px 0 5px; }
+#Table a.Edit { background:url(../img/admin2/edit.gif) no-repeat left center; display:block; text-indent:-9999px; height:16px; width:16px; }
+
+#Table a.Delete { background:url(../img/admin2/delete.gif) no-repeat left center; display:block; text-indent:-9999px; height:16px; width:16px; padding:0; padding-top:4px; }
+#Table a.reply { background:url(../img/admin2/email_rep.gif) no-repeat left center; display:block; text-indent:-9999px; height:16px; width:16px; padding:0; padding-top:4px; }
+
+#Table a.view{ background:url(../img/admin2/eye.gif) no-repeat left;display:block; text-indent:-9999px; height:16px; width:16px; padding:0; padding-top:4px; }
+
+#Table a.invoice{background:url(../img/admin2/doc_pdf.gif) no-repeat left;display:block; text-indent:-9999px; height:16px; width:16px; padding:0; padding-top:4px; }
+
+#Table a.View { background:url(../img/admin2/view.gif) no-repeat left center; display:block; text-indent:-9999px; height:16px; width:16px; }
+
+#Table a.Block { background:url(../img/admin2/lock.gif) no-repeat left center; display:block; text-indent:-9999px; height:16px; width:16px; }
+#Table a.UnBlock { background:url(../img/admin2/lock_open.gif) no-repeat left center; display:block; text-indent:-9999px; height:16px; width:16px; }
+#Table a.Edit, #Table a:hover.Edit { background:url(../img/admin2/edit.gif) no-repeat left center; }
+#Table a.Delete, #Table a:hover.Delete { background:url(../img/admin2/delete.gif) no-repeat left center; }
+#Table a.View, #Table a:hover.View { background:url(../img/admin2/view.gif) no-repeat left center; }
+#Table a.Block, #Table a:hover.Block { background:url(../img/admin2/lock.gif) no-repeat left center; }
+#Table a.UnBlock, #Table a:hover.UnBlock { background:url(../img/admin2/lock_open.gif) no-repeat left center; }
+#Table a.LoginAs, #Table a:hover.LoginAs { background:url(../img/admin2/key.gif) no-repeat left center; display:block; float:left; text-indent:-9999px; height:16px; width:16px; padding:0 5px 0 5px; margin-left:3px; }
+#Table a.Profile, #Table a:hover.Profile { background:url(../img/admin2/profile.gif) no-repeat left center; display:block; float:left; text-indent:-9999px; height:16px; width:16px; padding:0 5px 0 5px; }
+#Table a.Activate, #Table a:hover.Activate { background:url(../img/admin2/accept.gif) no-repeat left center; display:block; float:left; text-indent:-9999px; height:16px; width:16px; padding:0 5px 0 5px; }
+#Export ul { list-style:none; }
+#Export ul li { padding:3px 0; }
+a.Exportcsv { background:url(../img/admin2/page_white_excel.gif) no-repeat left center; display:block; height:16px; padding:0 5px 0 25px; color:#333; text-decoration:none; }
+#Export a.Schedule { background:url(../img/admin2/time.gif) no-repeat left center; display:block; height:16px; padding:0 5px 0 25px; color:#333; text-decoration:none; }
+.Filter_Me { background:url(../img/admin2/filter.gif) no-repeat left center; display:block; height:16px; padding:0 5px 0 25px; color:#333; text-decoration:none;  }
+
+/* page navigation */
+.paging { color:#c7c7c7; margin:0px 0 10px 0; display:block; height:30px; }
+.paging a { text-decoration:none; color:#ff3100; }
+.paging a:hover { text-decoration:underline; color:#ff3100; }
+.paging .disabled { display:inline; color:#7f7f7f; }
+.paging .current { display:inline; font-weight:700; color:#7f7f7f; }
+.paging span a, .paging span a:visited { display:inline; color:#ff3100; text-decoration:none; }
+/* Extra class for Cakephp */
+
+.actions ul { list-style:none; }
+.actions ul a { color:#666666; background:url(../img/admin2/folder.png) no-repeat left top; text-decoration:none; padding-left:16px; }
+.related { padding-top:20px; }
+.related h3 { padding-bottom:10px; }
+.categoriesindex { padding-bottom:10px; }
+.categoriesindex h2 { padding-bottom:10px; }
+td .actions { margin-left:10px; font-size:12px; text-transform:capitalize; }
+#TableHeader a { text-decoration:none; display:block; color:#ff6c00; padding:6px 10px 0 10px; height:20px; margin-right:5px; }
+#TableHeader a:hover { background:url(../img/admin2/top_hover.gif) right no-repeat; text-decoration:none; display:block; }
+#TableHeader td.asc a { text-decoration:none; display:block; background:url(../img/admin2/top_hover.gif) right center no-repeat; color:#0092ff; }
+td.asc a { color:#0092ff; text-decoration:none; padding-right:10px; display:none; }
+td.asc a:hover { background:url(../img/admin2/down_hover.gif) right no-repeat; text-decoration:none; }
+#TableHeader td.desc a, td.desc a:hover { text-decoration:none; display:block; background:url(../img/admin2/down_hover.gif) right center no-repeat; }
+td.desc a { text-decoration:none; }
+td.desc a:hover { background:url(../img/admin2/top_hover.gif) right center no-repeat; text-decoration:none; }
+.sort { text-decoration:none; background:url(../img/admin2/top_arrow.gif) right center no-repeat; }
+/* Login Page*/
+#Login { background:#FFF; margin:50px auto; padding:0; width:400px; border:8px solid #f2f2f2; }
+#LoginHead { background:#f2f2f2; font-size:14px; width:100%; margin:10px 0 0 0; }
+.FormExtended2 form { width:auto; margin:30px 0 0 0; padding:0px 40px 40px 40px; }
+.FormExtended2 .INPUT { width:150px; border:1px solid #dddddd; padding:4px 3px 4px 0; background:#FFF url(../img/admin2/input_text.gif) repeat-x; color:#727272; margin-top:10px; font-family:"Lucida Sans" }
+.FormExtended2 label { display:inline; float:left; font-size:16px; font-weight:700; width:100px; color:#444; word-spacing:-0.75px; padding-top:10px; }
+.FormExtended2 .Submit { background:url(../img/admin2/submit.gif) no-repeat; height:25px; width:69px; border:0; display:block; margin:20px 0 20px 0; font-size:12px; padding-bottom:2px; font-weight:700; color:#42413d; font-family:"Lucida Sans" }
+#Login h1 { font-size:14px;  background:#ebebeb; padding:10px 0 10px 10px; }
+#Login .Errormessage { background:#eedbd5 url(../img/admin2/error_msg.gif) no-repeat 10px 10px; height:26px; text-align:left; width:300px; border:1px solid #bd5748; padding:14px 0 10px 40px; margin:30px auto 30px auto; color:#bd5748; font-weight:700; }
+.Logout { text-align:right; margin:15px 0; }
+.Logout a { color:#990000; text-decoration:none; font-weight:700; }
+.Logout a.AdminLogout{ background:url(../img/admin2/lock_open.gif) left no-repeat; padding-left:20px; margin-bottom:10px; margin-left:10px;}
+.Logout a.AdminHome{ background:url(../img/admin/home.gif) left no-repeat; padding-left:25px; margin-bottom:10px;}
+
+
+a.pdf { background:url(../img/pdf.gif) no-repeat; text-indent:15px; width:100px; height:16px; margin-right:10px; padding-left:19px; }
+a.delete { background:url(../img/delete.gif) no-repeat; text-indent:15px; width:100px; height:16px; margin-right:10px; padding-left:18px; }
+.HomeLink a { text-decoration:none; float: right; }
+fieldset { padding:10px 10px 30px 10px; margin-bottom:20px; border:1px solid #E7E7E7; }
+.checkbox { display:block; position:relative; height:20px; margin-top:15px; }
+
+.checkbox input {  margin:0; padding:0; border:0; display:block; }
+.checkbox label {margin:0; padding:0; display:block;margin:-14px 0 0 20px; }
+
+/* PAGEING */
+.paging { display:block; margin-top:10px; padding-right:5px; }
+.paging ul { list-style:none; float:right; }
+.paging ul li { float:left; display:inline; padding:0 2px; }
+.paging ul li a { text-decoration:none; color:#727070; font-size:12px; }
+.paging ul li div.disabled { background:url(images/nav_left.gif) no-repeat; height:13px; width:13px; text-indent:-9999px; display:none; }
+.paging ul li.current { font-weight:700; }
+.paging ul li a.Next { background:url(images/nav_right.gif) no-repeat; height:13px; width:13px; text-indent:-9999px; display:block; }
+.paging ul li a.Prev { background:url(images/nav_left.gif) no-repeat; height:13px; width:13px; text-indent:-9999px; display:block; }
+
+#GalleryImage { margin-top:8px; }
+.SaveAsNew { background:transparent url(../img/admin2/bigbutton.jpg) no-repeat scroll 0 0; border:0 none; color:#42413D; display:block;  font-size:12px; font-weight:700; height:25px; margin:-45px 0 0px 80px; padding-bottom:2px; width:105px; clear:both; }
+
+.BlcokContents a.AddItem { background:transparent url(../img/admin2/add_item.gif) no-repeat scroll 0 0; border:0 none;  display:block;  font-size:12px; font-weight:700; height:25px; margin:10px 0 ;color:#1f3865; text-decoration:none;padding-left:20px;}
+
+.Preview{ background:url(../img/admin2/preview.gif) no-repeat left; padding:2px 10px 2px 20px; text-decoration:none; font-weight:700; }
+.Delete{ background:url(../img/admin2/trash.gif) no-repeat left; padding:0 10px 0 20px; text-decoration:none; font-weight:700; }
+.Download{ background:url(../img/admin2/download.gif) no-repeat left; padding:2px 10px 2px 20px; text-decoration:none; font-weight:700; }
+
+
+.Admin_details{ text-align:left; }
+.Admin_details{ width:100%;}
+
+.image_set{ display:block; margin:10px 0;}
+.image_set label{  display:inline;padding-right:10px;}
+.image_set .input{  display:inline; }
+
+.bottom_link{ display:block;  padding:5px 0 5px 20px;}
+.edit{background:url(../img/admin2/page_white_text.gif) no-repeat left;}
+.back{ background:url(../img/admin2/resultset_previous.gif) no-repeat left; }
+
+
+ul#menu, ul#menu ul { list-style-type:none; margin: 0; padding: 0;  }
+ul#menu a { display: block; text-decoration: none; }
+ul#menu li { margin-top: 1px;}
+ul#menu li ul table{ margin:10px 0; }
+
+a.Acc_Head{ display:block;  background:#f4f4f4  url(../img/admin2/arrow_closed.gif) no-repeat 10px 10px; padding:7px 0 7px 25px; color:#333; font-size:12px; font-weight:700; width:100%;}
+a:hover.Acc_Head{ background:#eeeeee  url(../img/admin2/arrow_closed.gif) no-repeat 10px 10px;}
+
+ul#menu{ display:block; margin:35px 0; width:90%; overflow:hidden;}
+
+.SmallHeading{ display:block; margin:25px 0 15px 0; border-bottom:1px solid #EEE;}
+
+td.multiSelect{ width:50px;}
+td.Action{ width:150px;}
+
+
+.progress_uploader{ display:block; margin:10px 0 20px 0;}
+.progress_uploader embed{ display:block; margin:10px 0;}
+.FormExtended .progress_uploader img{ margin:0; padding:0;}
+
+#uploaded_file,.uploaded_file{ 
+background:#F0FFF1; display:none;
+border:1px dotted #004303;
+color:#004303;
+margin:10px 0;
+padding:10px;
+width:30%;}
+
+#uploaded_file span,.uploaded_file span{ font-weight:700;}
+
+a._1st_Startupload{ background:url(../img/admin2/red_light.jpg) no-repeat left; padding-left:10px; color:#ac1c35; display:block; margin:5px 0; font-weight:700; float:left;}
+#file_browsers embed{ margin-right:10px; display:inline; float:left; margin-bottom:15px;}
+
+#convert_loading{ background:#F6F6F6 url(images/load.gif) no-repeat scroll center 15px;
+border:1px solid #DEDEDE;
+display:block;
+margin:25px auto;
+padding:40px 20px 15px;
+text-align:center;
+width:400px;}
+
+.fileUploadQueueItem{ display:block; clear:both;}
+
+.loading{ background:url(../img/admin2/small_load.gif) no-repeat left; padding-left:20px; display:block; margin:8px 0; }
+#loading span,.loading span{ padding-left:3px; text-decoration:blink;}
+
+.cancel img{width:16px;height:16px;}
+
+.BlcokContents .Charts {  display:block; background:url(../img/admin2/charts.gif) no-repeat left center; font-weight:100; margin:10px 0; color:#333; display:block; height:20px; padding:4px 5px 0 25px; text-decoration:none;  }
+
+.admin_popup{ background:#FFF; padding:25px 20px;}
+
+.Order_PaymentDetails{ display:block;}
+
+.Order_PaymentDetails h3, .Admin_Summery h3{ padding-left:4px; font-size:18px; font-weight:100;}
+.Order_PaymentDetails table { border-top:1px solid #ccc;  border-left:1px solid #ccc; margin:15px 0;}
+.Order_PaymentDetails table td{ padding:8px 4px; border-right:1px solid #ccc;  border-bottom:1px solid #ccc;}
+
+.rightCol h3{ margin:40px 5px 20px; line-height:20px; /*border-bottom:1px dashed #CCCCCC;*/ line-height:20px; padding-bottom:10px; margin-bottom:3px; background:url(images/button-white.png) no-repeat right 2px; padding:0 30px 10px 0; font-weight:700; text-align:right}
+.bullet{margin-right:15px; list-style:none}
+.bullet li{background:url(images/li4.gif) no-repeat right 3px; margin-top:10px; padding:0 20px 0 0; text-align:right; font-family:Tahoma, Geneva, sans-serif; font-size:13px}
+.dashboardblock{float:right;width:200px;font-family: Tahoma}
+
+.ErrorBG{background:#eaf2fa}

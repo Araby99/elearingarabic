@@ -1,0 +1,136 @@
+.header_slider {
+	background:url(purple-berry/header_bg.jpg) center 0 no-repeat;}
+
+.topmenu .dropdown li a:hover,
+.topmenu .dropdown .current-menu-item a,
+.topmenu .dropdown .current-menu-item li a:hover,
+.topmenu .dropdown .current-menu-item .current_page_item a,
+.topmenu .dropdown .current-menu-ancestor a,
+.topmenu .dropdown .current-menu-ancestor a:hover,
+.topmenu .dropdown li li.current-menu-ancestor a,
+.topmenu .dropdown li .current-menu-ancestor .current-menu-item a,
+.topmenu .dropdown .menu-item-home.current-menu-item a, 
+.topmenu .dropdown .menu-item-home a:hover{
+	color:#8e1469;}
+
+.widget_categories li:hover a,
+.widget_categories .current-menu-item a {
+	color:#8e1469;}
+
+.tf_menu_left li a:hover,
+.tf_menu_left .current-menu-item a, 
+.tf_menu_left .current-menu-ancestor a,
+.tf_menu_right li a:hover,
+.tf_menu_right .current-menu-item a, 
+.tf_menu_right .current-menu-ancestor a,
+.tf_menu_left li ul .current-menu-item a,
+.tf_menu_right li ul .current-menu-item a,
+.tf_menu_left li ul li a:hover,
+.tf_menu_right li ul li a:hover {
+	color:#8e1469;}
+
+.header_slider_thin {
+	background: url(purple-berry/header_bg_thin.jpg) center 0 no-repeat}
+
+/* sliders */
+.sImages .caption {
+	color:#fff;
+	text-shadow:1px 1px 1px #000;
+	background:url(purple-berry/slider_caption.png);}
+
+.sImages .pagination li a {
+	background-image:url(purple-berry/slider_pagination.png);}
+
+.slider-button {
+	background:url(purple-berry/slider_button.png) no-repeat;} 
+
+/* footer */
+.footer {
+	background:url(purple-berry/footer_bg_img.jpg) 0 0 no-repeat #771f59;}
+
+/* content */	
+.content .link-more {
+	color:#8e1469;}
+
+a, .entry a, .text a {
+	color:#91146b}
+	
+.container_12 a:hover,
+.content .link-more:hover {
+	color:#b61986}
+	
+.quote-text, .quote_right, .quote_left {
+	color:#91146b;}
+
+.faq_question {
+	color:#91146b;}
+
+.post-item h2 a:hover {
+	color:#91146b;}
+
+.tf_pagination a {
+	color:#8e1469;}
+	
+.tf_pagination a:hover {
+	color:#adc301}
+
+.tf_pagination .page_current {
+	color:#000}
+
+.comment-author, .comment-author .link-author  {
+	color:#8e1469;}
+
+.comment-entry .link-reply {
+	color:#91146b;}
+
+.children li {
+	background:url(purple-berry/icon_reply.gif) 15px 23px no-repeat;}
+
+.link-top, .link-addcomment {
+	color:#8e1469;}
+
+.btn-submit, 
+.contact-form .btn-submit, 
+.comment-form .btn-submit {
+	background:url(purple-berry/btn_submit.png) no-repeat;}
+
+.button_link {
+	background:url(../images/buttons_bg_purple.png) no-repeat scroll right -25px transparent;}
+
+.button_link span {
+	background:url(../images/buttons_bg_purple.png) no-repeat scroll left 0 transparent;}
+
+/* Color Styled Buttons */
+.btn_brown, .btn_brown span {
+	background-image:url(../images/buttons_bg_brown2.png);}
+.btn_blue, .btn_blue span {
+	background-image:url(../images/buttons_bg_blue.png);}
+.btn_orange, .btn_orange span {
+	background-image:url(../images/buttons_bg_orange.png);}
+.btn_green, .btn_green span {
+	background-image:url(../images/buttons_bg_green.png);}
+.btn_green_apple, .btn_green_apple span {
+	background-image:url(../images/buttons_bg_green_apple.png);}
+.btn_red, .btn_red span {
+	background-image:url(../images/buttons_bg_red.png);}
+.btn_purple, .btn_purple span {
+	background-image:url(../images/buttons_bg_purple.png);}
+.btn_dark_gray, .btn_dark_gray span {
+	background-image:url(../images/buttons_bg_black_gray.png);}	
+.btn_red, .btn_red span {
+	background-image:url(../images/buttons_bg_red.png);}
+
+.gl_col_1 .gallery-image:hover,
+.gl_col_2 .gallery-image:hover,
+.gl_col_3 .gallery-image:hover {
+	background:#922971;}
+
+.filter li a:hover span,
+.filter li.current-menu-item a span {
+	color:#8e1469}
+
+.container_12 blockquote {
+	color:#91146b;}
+
+.faq_question.active {
+	color:#b61986}

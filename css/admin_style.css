@@ -1,0 +1,121 @@
+/*----------------------------------------------*/
+.comment-list {
+	position:relative;
+	padding:10px 0 10px 0}
+
+.link-addcomment {
+	position:absolute;
+	right:0;
+	top:10px;
+	color:#954b07;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	line-height:18px;
+	display:inline-block}
+
+.link-addcomment:hover {
+	color:#000}
+
+.comment-list ol, .comment-list ul {
+	margin:0;}
+
+.comment-list ul li,
+.comment-list ol li {
+	margin-top:10px;
+	list-style:none}
+		
+.comment {
+	clear:both;
+	display:block;
+	min-height:25px;
+	padding:0;
+	color:#404040}
+	
+.comment-body {
+	padding:20px;
+	background:#fff;
+	border:1px solid #dfe0e0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;}
+
+.comment-body:hover {
+	border:1px solid #c9c9c9;}
+	
+.avatar {
+	width:40px;
+	height:40px;
+	float:right;}
+
+.avatar img {
+	width:40px;
+	height:40px}
+
+.avatar img {
+	border-right:1px solid #d1d0cc;
+	border-bottom:1px solid #d1d0cc}
+
+.comment-text {
+	float:left;
+	width:500px;}
+
+.comment-text a {
+	text-decoration:underline;
+	font-size:12px}
+	
+.comment-author {
+	color:#954b07;
+	font-size:15px;
+	font-family:'VegurBold', Arial, Helvetica, sans-serif;
+	padding-bottom:5px}
+
+.comment-author .link-author {
+	color:#954b07;
+	font-size:15px;
+	text-decoration:none;
+	padding-bottom:3px}
+
+.comment-date {
+	font-size:11px;
+	color:#8f8f8f;
+	margin-left:5px}
+
+.comment-entry .link-reply {
+	color:#954b07;
+	font-size:12px;
+	line-height:1em;
+	margin-left:5px}
+
+.comment-entry {
+	padding-top:8px;
+	font-size:12px;
+	line-height:1.4em;
+	color:#595959}
+
+.children li {
+	background:url(images/icon_reply.gif) 15px 23px no-repeat;
+	padding-left:45px}
+
+.children .comment-text {
+	width:450px;}
+
+.children .children .comment-text {
+	width:400px}
+
+.children .comment {}
+
+.add-comment {
+	position:relative}
+
+.comment-list h2, .add-comment h3 {
+	font-family:'VegurRegular', Arial, Helvetica, sans-serif;
+	font-size:19px;}
+
+.link-top {
+	position:absolute;
+	top:0px;
+	right:10px;
+	text-decoration:underline;
+	color:#954b07;
+	font-weight:bold}

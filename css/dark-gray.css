@@ -1,0 +1,117 @@
+.header_slider {
+	background:url(dark-gray/header_bg.jpg) center 0 no-repeat;}
+
+.topmenu .dropdown li a:hover,
+.topmenu .dropdown .current-menu-item a,
+.topmenu .dropdown .current-menu-item li a:hover,
+.topmenu .dropdown .current-menu-item .current_page_item a,
+.topmenu .dropdown .current-menu-ancestor a,
+.topmenu .dropdown .current-menu-ancestor a:hover,
+.topmenu .dropdown li li.current-menu-ancestor a,
+.topmenu .dropdown li .current-menu-ancestor .current-menu-item a,
+.topmenu .dropdown .menu-item-home.current-menu-item a, 
+.topmenu .dropdown .menu-item-home a:hover{
+	}
+
+.widget_categories li:hover a,
+.widget_categories .current-menu-item a {
+	}
+
+.tf_menu_left li a:hover,
+.tf_menu_left .current-menu-item a, 
+.tf_menu_left .current-menu-ancestor a,
+.tf_menu_right li a:hover,
+.tf_menu_right .current-menu-item a, 
+.tf_menu_right .current-menu-ancestor a,
+.tf_menu_left li ul .current-menu-item a,
+.tf_menu_right li ul .current-menu-item a,
+.tf_menu_left li ul li a:hover,
+.tf_menu_right li ul li a:hover {
+	}
+
+.header_slider_thin {
+	background: url(dark-gray/header_bg_thin.jpg) center 0 no-repeat}
+
+/* sliders */
+.sImages .caption {
+	color:#fff;
+	text-shadow:1px 1px 1px #000;
+	background:url(dark-gray/slider_caption.png);}
+
+.sImages .pagination li a {
+	background-image:url(dark-gray/slider_pagination.png);}
+
+.slider-button {
+	background:url(dark-gray/slider_button.png) no-repeat;} 
+
+/* footer */
+.footer {
+	background:url(dark-gray/footer_bg_img.jpg) 0 0 #424242 no-repeat;}
+
+/* content */	
+.content .link-more {
+	color:#75540b;}
+
+a, .entry a, .text a {
+	color:#855f0b}
+	
+.container_12 a:hover,
+.content .link-more:hover {
+	color:#ab7b0f}
+	
+.quote-text, .quote_right, .quote_left {
+	color:#855f0b;}
+
+.faq_question {
+	color:#855f0b;}
+
+.post-item h2 a:hover {
+	color:#855f0b;}
+
+.tf_pagination a {
+	color:#75540b;}
+	
+.tf_pagination a:hover {
+	color:#adc301}
+
+.tf_pagination .page_current {
+	color:#000}
+
+.comment-author, .comment-author .link-author  {
+	color:#75540b;}
+
+.comment-entry .link-reply {
+	color:#855f0b;}
+
+.children li {
+	background:url(dark-gray/icon_reply.gif) 15px 23px no-repeat;}
+
+.link-top, .link-addcomment {
+	color:#75540b;}
+
+.btn-submit, 
+.contact-form .btn-submit, 
+.comment-form .btn-submit {
+	background:url(dark-gray/btn_submit.png) no-repeat;}
+
+.button_link {
+	background:url(../images/buttons_bg_black_gray.png) no-repeat scroll right -25px transparent;}
+
+.button_link span, 
+.text .button_link span {
+	background:url(../images/buttons_bg_black_gray.png) no-repeat scroll left 0 transparent;}
+
+.gl_col_1 .gallery-image:hover,
+.gl_col_2 .gallery-image:hover,
+.gl_col_3 .gallery-image:hover {
+	background:#515151;}
+
+.filter li a:hover span,
+.filter li.current-menu-item a span {
+	color:#855f0b}
+
+.container_12 blockquote {
+	color:#855f0b;}
+
+.faq_question.active {
+	color:#000}
